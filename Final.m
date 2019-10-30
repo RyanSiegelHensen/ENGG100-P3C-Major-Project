@@ -8,9 +8,9 @@ b = input('which graph do you want 1 , 2 , 3 or 4: ');%same as above
 % 3 is Horizontal Displacement vs Vertical Displacement 
 % 4 plots the Theoretical Data vs the Actual Data (Displacement vs
 % Time)
-Graph(a,b)%Graph it based on a and b
+Plot(a,b)%Graph it based on a and b
 
-c=input('do you want to save as image[Y/N]?','s');%sve as image or not
+c=input('do you want to save plot as image? [Y/N]:','s');%sve as image or not
 
 if c=='Y'|| c== 'y';Save(a,b);end%if yes save based on a and b
 
