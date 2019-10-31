@@ -36,9 +36,9 @@ for i=1:NumberShotPositions
     label3 = ['Vertical' , num2str(i)];
         %putting every element in data array into respective structure row and column
     for j = 1:ShotLengths(i)
-        DATA(j).(label1) = ImportedData(j+Previous,1); %Inserts the time column for the structure (shot 1)
-        DATA(j).(label2)=ImportedData(Previous+ShotLengths(i)-j+1,2); % Inserts horizontal data column for shot 1
-        DATA(j).(label3)=ImportedData(j+Previous,3);%Inserts 
+        DATA(j).(label1) = ImportedData(j+Previous,1); %Inserts the time column for the structure
+        DATA(j).(label2)=ImportedData(Previous+ShotLengths(i)-j+1,2); % Inserts horizontal data column
+        DATA(j).(label3)=ImportedData(j+Previous,3);%Inserts the vertical distance data columns
     end
     Previous = Previous + ShotLengths(i);
 end
