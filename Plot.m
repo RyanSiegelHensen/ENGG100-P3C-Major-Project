@@ -16,22 +16,17 @@ h = 3.05; %height of ring
 
 if a == 1
     if b == 1
-        plot([DATA.timeone],[DATA.Horizontalone])
+        plot([DATA.Time1],[DATA.Horizontal1])
         title('Shot 1-Time vs Horizontal')
         xlabel('Time')
         ylabel('Horizontal')
     elseif b == 2
-        plot([DATA.timeone],[DATA.Verticalone]+h)
+        plot([DATA.Time1],[DATA.Vertical1]+h)
         title('Shot 1-Time vs Vertical')
         xlabel('Time')
         ylabel('Vertical')
     elseif b == 3
-        plot([DATA.Horizontalone],[DATA.Verticalone]+h)
-        title('Shot 1-Horizontal vs Vertical')
-        xlabel('Horizontal')
-        ylabel('Vertical')
-    elseif b == 3
-        plot([DATA.Horizontalone],[DATA.Verticalone]+h)
+        plot([DATA.Horizontal1],[DATA.Vertical1]+h)
         title('Shot 1-Horizontal vs Vertical')
         xlabel('Horizontal')
         ylabel('Vertical')
@@ -43,29 +38,34 @@ if a == 1
     end
 elseif a == 2
     if b == 1
-        plot([DATA.timetwo],[DATA.Horizontaltwo])
+        plot([DATA.Time2],[DATA.Horizontal2])
         title('Shot 2-Time vs Horizontal')
         xlabel('Time')
         ylabel('Horizontal')
     elseif b == 2
-        plot([DATA.timetwo],[DATA.Verticaltwo])
+        plot([DATA.Time2],[DATA.Vertical2])
         title('Shot 2-Time vs Vertical')
         xlabel('Time')
+        ylabel('Vertical')
+    elseif b == 3
+        plot([DATA.Horizontal2],[DATA.Vertical2]+h)
+        title('Shot 2-Horizontal vs Vertical')
+        xlabel('Horizontal')
         ylabel('Vertical')
     end
 elseif a == 3
     if b == 1
-        plot([DATA.timethree],[DATA.Horizontalthree])
+        plot([DATA.Time3],[DATA.Horizontal3])
         title('Shot 3-Time vs Horizontal')
         xlabel('Time')
         ylabel('Horizontal')
     elseif b == 2
-        plot([DATA.timethree],[DATA.Verticalthree])
+        plot([DATA.Time3],[DATA.Vertical3])
         title('Shot 3-Time vs Vertical')
         xlabel('Time')
         ylabel('Vertical')
     elseif b == 3
-        plot([DATA.Horizontalthree],[DATA.Verticalthree])
+        plot([DATA.Horizontal3],[DATA.Vertical3])
         title('Shot 3-Horizontal vs Vertical')
         xlabel('Horizontal')
         ylabel('Vertical')
